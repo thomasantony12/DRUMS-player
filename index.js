@@ -18,27 +18,39 @@ function audioPlay(condi) {
       audio.play();
       break;
     case "a":
-      var audio1 = new Audio("/sounds/kick-bass.mp3");
+      var audio1 = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/kick-bass.mp3?raw=true"
+      );
       audio1.play();
       break;
     case "s":
-      var audio2 = new Audio("/sounds/snare.mp3");
+      var audio2 = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/snare.mp3?raw=true"
+      );
       audio2.play();
       break;
     case "d":
-      var audio3 = new Audio("/sounds/tom-1.mp3");
+      var audio3 = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/tom-1.mp3?raw=true"
+      );
       audio3.play();
       break;
     case "j":
-      var audio4 = new Audio("/sounds/tom-2.mp3");
+      var audio4 = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/tom-2.mp3?raw=true"
+      );
       audio4.play();
       break;
     case "k":
-      var audio5 = new Audio("/sounds/tom-3.mp3");
+      var audio5 = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/tom-3.mp3?raw=true"
+      );
       audio5.play();
       break;
     case "l":
-      var audio6 = new Audio("/sounds/tom-4.mp3");
+      var audio6 = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/tom-4.mp3?raw=true"
+      );
       audio6.play();
       break;
     default:
