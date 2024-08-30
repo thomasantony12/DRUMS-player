@@ -12,7 +12,9 @@ document.addEventListener("keypress", function (event) {
 function audioPlay(condi) {
   switch (condi) {
     case "w":
-      var audio = new Audio("/sounds/crash.mp3");
+      var audio = new Audio(
+        "https://github.com/thomasantony12/DRUMS-player/blob/main/sounds/crash.mp3?raw=true"
+      );
       audio.play();
       break;
     case "a":
