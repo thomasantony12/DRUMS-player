@@ -2,11 +2,13 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var word = this.innerHTML.toLowerCase();
     audioPlay(word);
+    addAnimation(word);
   });
 }
 
 document.addEventListener("keypress", function (event) {
   audioPlay(event.key.toLowerCase());
+  addAnimation(event.key.toLowerCase());
 });
 
 function audioPlay(condi) {
@@ -56,4 +58,12 @@ function audioPlay(condi) {
     default:
       console.log("wrong key");
   }
+}
+
+function addAnimation(btn) {
+  var currentBtn = document.querySelector("." + btn);
+  currentBtn.classList.add("pressed");
+  setTimeout(function () {
+    currentBtn.classList.remove("pressed");
+  }, 50);
 }
